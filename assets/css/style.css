@@ -82,6 +82,12 @@ sub { bottom: -.25em; }
 .cf { *zoom: 1; }
 
 /*for all*/
+*,*::before,*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   box-sizing: border-box;
   font-family: sans-serif;
@@ -100,16 +106,72 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%; 
+  width: 96%; 
   margin: 0 auto;
 }
 /*=================================
   Header styling starts here
 =================================*/
+header { padding-bottom: 22px; }
 
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.logo { 
+  padding-top: 22px;
+  margin-right: 3.5%;
+}
 
+.hamburger { display: none; }
+.nav-items { display: flex; }
+.nav-list { position: relative; }
 
+.nav-list a {
+  padding: 0 18px;
+  color: rgb(188,189,189);
+  font-size: 14px;
+  display: inline-block;
+  text-transform: uppercase;
+  transition: all .6s ease;
+}
+
+.nav-list::before {
+  content: '';
+  width: 1px;
+  height: 23px;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  right: 0;
+  background: rgb(188,189,189);
+  transform: translateY(-50%) skewX(340deg);
+  transition: all .5s ease;
+}
+
+.nav-list:last-child:before { width: 0; }
+
+.nav-list:hover::before { 
+  width: 100%;
+  background: rgb(0,0,0);
+}
+
+.nav-list:hover a { color: rgb(255,255,255); }
+
+.search a {
+  text-indent: -9999px;
+  color: rgb(188,189,189);
+}
+
+.search-icon::before {
+  content: '\f002';
+  float: left;
+  font-family: "FontAwesome";
+  font-size: 24px;
+  text-indent: 0;
+}
 
 
 /*=================================
