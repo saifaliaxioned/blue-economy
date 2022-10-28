@@ -172,8 +172,6 @@ header { padding-bottom: 22px; }
   font-size: 24px;
   text-indent: 0;
 }
-
-
 /*=================================
   Header styling ends here
 =================================*/  
@@ -181,6 +179,41 @@ header { padding-bottom: 22px; }
 /*=================================
   main styling starts here
 =================================*/
+/* banner section start */
+.banner .wrapper {
+  position: relative;
+}
+
+.box-1 {
+  width: 40.1%;
+  /* height: 356px; */
+  padding: 70px 0;
+  background: rgb(110,179,224);
+}
+
+.box-1 h2 {
+  width: 71%;
+  text-align: center;
+  padding: 50px 0 50px 12%;
+  color: rgb(255,255,255);
+  font-size: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.box-2 {
+  width: 60%;
+  padding: 58px 0;
+  font-size: 14px;
+  background: rgb(95,178,222);
+  color: rgb(255,255,255);
+  text-align: center;
+  line-height: 1.8;
+}
+
+.box-2 p { padding: 70px 20%; }
+
+/* banner section end */
 
 
 
