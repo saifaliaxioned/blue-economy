@@ -240,15 +240,96 @@ header { padding-bottom: 22px; }
 .booking .wrapper {
   width: 100%;
   padding: 30px 0;
-  margin: 50px 0;
+  margin: 50px auto;
+}
+
+.booking-container {
   display: flex;
 }
 
 .booking-content { 
+  padding-top: 20px;
   flex-basis: 50%;
   background: rgb(95,172,214);
 }
+
 .booking-image { flex-basis: 50%; }
+
+.booking-content h3 {
+  padding: 30px 0;
+  color: rgb(255,255,255);
+  font-size: 31px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.booking-content p {
+  padding: 20px 13%;
+  color: rgb(255,255,255);
+  font-size: 15px;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.booking-btns {
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.booking-btns a {
+  padding: 19px 41px;
+  color: rgb(0,0,0);
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.btn-1 a {
+  background: rgb(255,255,255);
+}
+.btn-2 a {
+  background: rgb(255,229,0);
+}
+
+.booking-details {
+  margin-top: 18px;
+  display: flex;
+  border-top: 1px solid rgb(0,0,0,0.1);
+}
+
+.booking-list { 
+  flex-basis: 50%;
+  display: flex;
+  /* border-right: 1px solid rgb(0,0,0); */
+}
+
+.booking-list address,.booking-list span {
+  padding: 28px;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+.booking-list:first-child::before {
+  content: '\f5a0';
+  border-right: 1px solid rgb(0,0,0,0.1);
+  padding: 28px;
+  float: left;
+  font-family: 'FontAwesome';
+  color: rgb(0,0,0);
+}
+
+.booking-list:last-child::before {
+  content: '\f073';
+  border-left: 1px solid rgb(0,0,0,0.1);
+  border-right: 1px solid rgb(0,0,0,0.1);
+  padding: 28px;
+  float: left;
+  font-family: 'FontAwesome';
+  color: rgb(0,0,0);
+}
 
 /* booking section end */
 
