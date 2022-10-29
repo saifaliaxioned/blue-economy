@@ -91,6 +91,7 @@ sub { bottom: -.25em; }
 body {
   box-sizing: border-box;
   font-family: sans-serif;
+  overflow: hidden;
 }
 
 a { 
@@ -181,7 +182,7 @@ header { padding-bottom: 22px; }
 =================================*/
 /* banner section start */
 .banner .wrapper {
-  width: 86%;
+  width: 84%;
   position: relative;
   padding: 43px 0;
 }
@@ -204,11 +205,11 @@ header { padding-bottom: 22px; }
 }
 
 .box-2 {
-  width: 60%;
+  width: 67%;
   padding: 58px 0;
   position: absolute;
   top: 20%;
-  right: 6.3%;
+  left: 33%;
   background: rgb(95,178,222);
   color: rgb(255,255,255);
   font-size: 14px;
@@ -218,16 +219,16 @@ header { padding-bottom: 22px; }
 
 .box-2 p { padding: 70px 20%; }
 
-/* .box-3 {
-  display: flex;
-  width: 40%;
-  padding: 30px 0;
-  border: 8px solid rgb(0,0,0);
+.box-3 {
+  width: 62%;
+  padding: 35px 0;
+  border: 10px solid rgb(0,0,0,.6);
   position: absolute;
-  top: 50%;
-  left: 0;
-  transform: rotate(120deg) skewX(0deg);
-} */
+  z-index: -1;
+  top: 45%;
+  left: 12%;
+  transform: rotate(152deg);
+}
 
 .box-3 span { 
   display: inline-block;
@@ -235,6 +236,21 @@ header { padding-bottom: 22px; }
 }
 /* banner section end */
 
+/* booking section start */
+.booking .wrapper {
+  width: 100%;
+  padding: 30px 0;
+  margin: 50px 0;
+  display: flex;
+}
+
+.booking-content { 
+  flex-basis: 50%;
+  background: rgb(95,172,214);
+}
+.booking-image { flex-basis: 50%; }
+
+/* booking section end */
 
 
 
