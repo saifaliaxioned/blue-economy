@@ -279,7 +279,7 @@ header { padding-bottom: 22px; }
   gap: 5px;
 }
 
-.booking-btns a {
+.booking-btns a,.readMore-btn a {
   padding: 19px 41px;
   color: rgb(0,0,0);
   font-size: 12px;
@@ -287,7 +287,7 @@ header { padding-bottom: 22px; }
   text-transform: uppercase;
 }
 
-.btn-1 a {
+.btn-1 a,.readMore-btn a {
   background: rgb(255,255,255);
 }
 .btn-2 a {
@@ -369,12 +369,13 @@ header { padding-bottom: 22px; }
 }
 
 .article-container {
+  padding: 30px 0;
   display: flex;
-  gap: 30px;
+  gap: 50px;
 }
 
 .article-items {
-  height: 500px;
+  height: 576px;
   border-left: 1px solid rgb(188,189,189);
   flex-basis: 30%;
   display: flex;
@@ -403,6 +404,15 @@ header { padding-bottom: 22px; }
   background: rgb(162,162,162);
 }
 
+.article-list h5 {
+  padding-bottom: 5px;
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.article-list p { font-size: 14px; }
+
 .article-details {
   flex-basis: 60%;
 }
@@ -417,13 +427,151 @@ header { padding-bottom: 22px; }
 {
 	background-color: rgb(209, 209, 209);
 }
+
+.article-content {
+  width: 80%;
+  padding: 40px 6%;
+  background: rgb(220,228,230);
+}
+
+.article-heading {
+  padding: 20px 0;
+}
+
+.article-heading,.article-end {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article-heading h5,.article-heading span {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.article-heading h5 {
+  font-size: 18px;
+}
+
+.article-heading span {
+  font-size: 13px;
+  color: rgb(123,135,135);
+}
+
+.article-content p {
+  padding: 20px 0;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.article-end { padding: 30px 0; }
+
+.unit span {
+  padding: 10px 20px 10px 0;
+  border: 1px solid rgb(184,183,119);
+  display: inline-block;
+  text-transform: capitalize;
+  font-size: 12px;
+}
+
+.unit span::before {
+  content: '\f31c';
+  padding: 11px;
+  margin-right: 20px;
+  color: rgb(255,255,255);
+  background: rgb(184,183,119);
+  font-family: 'FontAwesome';
+}
 /* article section end */
 
+/* infographic section start */
+.infographic {
+  padding: 55px 0;
+}
 
+.info-items {
+  padding: 30px 0;
+  display: flex;
+  gap: 4px;
+}
 
+.info-list {
+  position: relative;
+  flex-basis: 33.3%;
+}
 
+.content {
+  padding: 20px 37px;
+  position: absolute;
+  width: 76%;
+  top: 63%;
+  left: 50%;
+  background: rgb(255,255,255,.7);
+  text-align: center;
+  transform: translate(-50%,-50%);
+}
 
+.content h5 {
+  padding: 20px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
 
+.content p {
+  padding: 0 0 20px 0;
+  font-size: 14px;
+}
+
+.content a{ 
+  width: 60px;
+  height: 60px;
+  margin: 20px 0;
+  border-radius: 50%;
+  position: relative;
+  background: rgb(255,255,255);
+  color: rgb(0,0,0,.3);
+  box-shadow: 0 0 40px rgb(0,0,0,.2);
+  font-size: 20px;
+  text-indent: -9999px;
+  transition: all 0.5s ease;
+}
+
+.content a::before {
+  content: '\f054';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: "FontAwesome";
+  text-indent: 0;
+  transform: translate(-50%,-50%);
+}
+
+.slider {
+  margin: 30px 0;
+  padding: 18px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.slide-bar {
+  background: rgb(208,221,228);
+  width: 45%;
+  color: #fff;
+}
+
+.slide-thumb {
+  display: inline-block;
+  background: rgb(99,166,208);
+  text-indent: -9999px;
+  margin-left: 7%;
+}
+
+.slide-thumb::before {
+  content: '';
+  width: 100px;
+  float: left;
+  text-indent: 0;
+}
+/* infographic section end */
 
 /*=================================
   main styling ends here
