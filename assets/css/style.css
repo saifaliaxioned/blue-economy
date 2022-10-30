@@ -573,6 +573,58 @@ header { padding-bottom: 22px; }
 }
 /* infographic section end */
 
+/* newsletter start */
+.newsletter {
+  padding: 30px 0;
+  background: rgb(95,178,222);
+}
+
+.newsletter .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter form {
+  width: 46%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 80%;
+}
+
+.input-control { flex-basis: 20%; }
+
+.input-group label { font-size: 12px; }
+.input-group input { 
+  padding: 20px;
+  background: rgb(135,204,245)
+}
+
+.input-group input,.input-control button{ 
+  outline: none;
+  border: none;
+}
+
+.input-control button {
+  text-indent: -9999px;
+  background: rgb(255,255,255);
+  padding: 17px 27px;
+  font-size: 19px;
+}
+
+.input-control button::before {
+  content: '\f1d8';
+  float: left;
+  text-indent: 0;
+  font-family: 'FontAwesome';
+}
+/* newsletter end */
+
 /*=================================
   main styling ends here
 =================================*/
